@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2>Formulários Animes</h2>
+<form action="register.php" method="post">
+<div>
+<label>Nome:</label>
+<input type="text"/>
+</div>
+
+<div>
+<label for="age">Idade:</label>
+<input type="text" name="age">
+</div>
+
+<div>
+<label for="job">Selecione o seu Anime Favorito:</label>
+<select name="job">
+<option value="sololeveling">Solo Leveling</option>
+<option value="onepiece">One Piece</option>
+<option value="blackclover">Black Clover</option>
+<option value="myheroacademia">My Hero Academia</option>
+</select>
+</div>
+
+<div>
+<label for="contract">você leu os termos?</label>
+<select name="contract">
+<option value="Sim">Sim</option>
+<option value="Não"selected>Não</option>
+</select>
+</div>
+
+<div>
+<label for="protagonista">protagonista favorito:</label>
+<select name="items"multiple>
+<option value="sungjinwoo">Sung Jin-Woo</option>
+<option value="luffy">Mokey D. Luffy</option>
+<option value="asta">Asta</option>
+<option value="midorya">Izuko Midorya</option>
+</select>
+</div>
+
+<div>
+<label for="comment">Fale a cena que mais marcou seu anime favorito para você:</label>
+<textarea name="comment"></textarea>
+</div>
+
+<div>
+<fieldset>
+<legend>Preencha as sua Informações</legend>
+<label for="firstname">Primeiro Nome:</label>
+<input type="text" name="firstname">
+<label for="lastname">Sobrenome</label>
+<input type="text"name="lastname">
+</fieldset>
+</div>
+
+<div>
+<label for="flavor">Sabor:</label>
+<input type="text"list="flavors" name="flavor">
+<datalist id="flavors">
+<option value="morango"></option>
+<option value="abacaxi"></option>
+<option value="cereja"></option>
+</datalist>
+
+</div>
+
+
+
+
+
+
+
+
+<input type="submit" value="enviar">
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

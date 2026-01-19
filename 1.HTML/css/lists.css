@@ -1,0 +1,20 @@
+ul{
+
+border: 5px dashed aqua;
+padding: 40px;
+border-radius: 30px;
+width: 270px;
+height: 270px;
+
+}
+
+li{
+
+font-family:monospace;
+color: white;
+font-size: 14px;
+height: 28px;
+
+
+}
+
