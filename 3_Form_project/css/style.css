@@ -1,0 +1,61 @@
+*{
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color: #345;
+}
+
+
+h1,h2,h3,h4,h4{
+    color: #333;
+}
+
+
+p{
+    color: #444;
+}
+
+
+input{
+    border: none;
+    border-bottom: 10px;
+width: 10px;
+}
+
+
+input[type="text"], input[type="number"], input[type="date"], input[type="file"],textarea{
+    width: 400px;
+}
+textarea{
+    padding: 10px 5px;
+}
+
+.header{
+height: 160px;
+padding: 20px;
+background-color: #673ab7;
+}
+
+.header h3{
+color: white;
+margin-top: 0;
+}
+
+.form-container{
+    background-color: #fdfdfd;
+width: 60%;
+margin: 0 auto;
+position: relative;
+top: -62px;
+}
+
+
+
+
+
+
+
