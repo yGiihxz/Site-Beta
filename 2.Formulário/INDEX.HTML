@@ -1,75 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <h2>Formulários Animes</h2>
-<form action="register.php" method="post">
+    <form action="register.php" method="post">
+        <div>
+            <label>Nome:</label>
+            <input type="text" />
+        </div>
+
+        <div>
+            <label for="age">Idade:</label>
+            <input type="text" name="age">
+        </div>
+
+        <div>
+            <label for="job">Selecione o seu Anime Favorito:</label>
+            <select name="job">
+                <option value="sololeveling">Solo Leveling</option>
+                <option value="onepiece">One Piece</option>
+                <option value="blackclover">Black Clover</option>
+                <option value="myheroacademia">My Hero Academia</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="contract">você leu os termos?</label>
+            <select name="contract">
+                <option value="Sim">Sim</option>
+                <option value="Não" selected>Não</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="protagonista">protagonista favorito:</label>
+            <select name="items" multiple>
+                <option value="sungjinwoo">Sung Jin-Woo</option>
+                <option value="luffy">Mokey D. Luffy</option>
+                <option value="asta">Asta</option>
+                <option value="midorya">Izuko Midorya</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="comment">Fale a cena que mais marcou seu anime favorito para você:</label>
+            <textarea name="comment"></textarea>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Preencha as sua Informações</legend>
+                <label for="firstname">Primeiro Nome:</label>
+                <input type="text" name="firstname">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="flavor">Sabor:</label>
+            <input type="text" list="flavors" name="flavor">
+            <datalist id="flavors">
+                <option value="morango"></option>
+                <option value="abacaxi"></option>
+                <option value="cereja"></option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="password">Digite a sua Senha:</label>
+            <input type="password" name="password">
+        </div>
+
+        <div>
+            <label for="car_model">Escolha o modelo do seu carro</label>
+            <div class="radio">
+                <input type="radio" value="bmw" name="car_model">
+                <label for="bmw">BMW</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="FERRARI" name="car_model">
+                <label for="ferrari">FERRARI</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="mercedes" name="car_model">
+                <label for="mercedes">MERCEDES</label>
+            </div>
+        </div>
+
 <div>
-<label>Nome:</label>
-<input type="text"/>
+<label for="optionals">Opcionais de carros:</label>
+<div class="radio">
+    <input type="checkbox" name="optionals[]" value="big_tires">
+<label for="big_tires">Pneus grandes</label>
+</div>
+<div class="radio">
+    <input type="checkbox" name="optionals[]" value="turbo_enigne">
+<label for="turbo_enigne">Motor Turbo</label>
+</div>
+<div class="radio">
+    <input type="checkbox" name="optionals[]" value="hybride">
+<label for="hybride">Hibrido</label>
+</div>
 </div>
 
 <div>
-<label for="age">Idade:</label>
-<input type="text" name="age">
+<label for="birthday">Data de nascimento</label>
+<input type="date" name="birthday">
 </div>
 
 <div>
-<label for="job">Selecione o seu Anime Favorito:</label>
-<select name="job">
-<option value="sololeveling">Solo Leveling</option>
-<option value="onepiece">One Piece</option>
-<option value="blackclover">Black Clover</option>
-<option value="myheroacademia">My Hero Academia</option>
-</select>
+<label for="image">Imagem</label>
+<input type="file" name="image">
+</div>
+
+
+<div>
+<label for="salaly">Quanto você ganha no seu emprego atual:</label>
+<input type="number" name="salary">
 </div>
 
 <div>
-<label for="contract">você leu os termos?</label>
-<select name="contract">
-<option value="Sim">Sim</option>
-<option value="Não"selected>Não</option>
-</select>
+<label for="email">Digite seu Email:</label>
+<input type="email" name="email">
 </div>
 
 <div>
-<label for="protagonista">protagonista favorito:</label>
-<select name="items"multiple>
-<option value="sungjinwoo">Sung Jin-Woo</option>
-<option value="luffy">Mokey D. Luffy</option>
-<option value="asta">Asta</option>
-<option value="midorya">Izuko Midorya</option>
-</select>
+<label for="value">Digite um valor</label>  
+<input type="text" value="o meu valor é este" name="value">
 </div>
+
 
 <div>
-<label for="comment">Fale a cena que mais marcou seu anime favorito para você:</label>
-<textarea name="comment"></textarea>
-</div>
-
-<div>
-<fieldset>
-<legend>Preencha as sua Informações</legend>
-<label for="firstname">Primeiro Nome:</label>
-<input type="text" name="firstname">
-<label for="lastname">Sobrenome</label>
-<input type="text"name="lastname">
-</fieldset>
-</div>
-
-<div>
-<label for="flavor">Sabor:</label>
-<input type="text"list="flavors" name="flavor">
-<datalist id="flavors">
-<option value="morango"></option>
-<option value="abacaxi"></option>
-<option value="cereja"></option>
-</datalist>
+    <p> tente mudar o valor</p>
+<input type="text" value="não precisa preencher" disabled>
 
 </div>
 
@@ -77,14 +148,10 @@
 
 
 
+        <input type="reset" value="Limpar">
 
 
-
-<input type="submit" value="enviar">
-
-
-
-
+        <input type="submit" value="enviar">
 
 
 
@@ -93,7 +160,11 @@
 
 
 
-</form>
+
+
+
+
+    </form>
 
 
 
@@ -112,4 +183,5 @@
 
 
 </body>
+
 </html>
